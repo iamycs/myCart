@@ -1,0 +1,47 @@
+[
+    {
+        "Id": "a003B000004fG1VQAU",
+        "Quantity": 2,
+        "UnitPrice": 4200,
+		"TotalPrice": 8400,
+		"PricebookEntryId":"",
+        "Product2Id": "a033B00000381hNQAQ",
+        "Product2": {
+            "Name": "DYNAMO X1",
+            "Price__c": 4200,
+            "Id": "a033B00000381hNQAQ",
+            "$serId$": 343
+        },
+        "$serId$": 342
+    },
+    {
+        "Id": "a003B000004fG1aQAE",
+        "Quantity": 1,
+        "UnitPrice": 4320,
+		"TotalPrice": 4320,
+		"PricebookEntryId":"",
+        "Product2Id": "a033B00000381hOQAQ",
+        "Product2": {
+            "Name": "DYNAMO X2",
+            "Price__c": 4320,
+            "Id": "a033B00000381hOQAQ",
+            "$serId$": 345
+        },
+        "$serId$": 344
+    },
+    {
+        "Id": "a003B000004fG1fQAE",
+        "Quantity": 1,
+        "UnitPrice": 4440,
+		"TotalPrice": 4440,
+		"PricebookEntryId":"",
+        "Product2Id": "a033B00000381hPQAQ",
+        "Product2": {
+            "Name": "DYNAMO X3",
+            "Price__c": 4440,
+            "Id": "a033B00000381hPQAQ",
+            "$serId$": 347
+        },
+        "$serId$": 346
+    }
+]

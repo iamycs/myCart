@@ -1,0 +1,28 @@
+.slds-card {
+    background: rgb(243, 242, 242);
+}
+
+.search-bar {
+    display: block;
+    margin: 0 0.5rem 0.3rem 0.5rem;
+}
+
+.product-list{
+
+    display: table!important;
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+c-product-tile {
+    min-width: 200px;
+    flex: 1;
+}
+
+c-paginator {
+    display: block;
+}

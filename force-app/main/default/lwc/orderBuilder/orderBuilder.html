@@ -1,0 +1,48 @@
+<template>
+    <div class="content slds-card">
+        <template if:true={orderItems}>
+            <header class="slds-text-heading_small">
+                <div>
+                    Order Total:
+                    <lightning-formatted-number
+                        value={orderPrice}
+                        format-style="currency"
+                        currency-code="USD"
+                        class="order-total"
+                    ></lightning-formatted-number>
+                </div>
+                <div class="right">Status: {status}</div>
+                <div class="right">Total Items: {orderQuantity}</div>
+            </header>
+            <div class="list-view">
+                <template for:each={orderItems} for:item="orderItem">
+                    <c-order-item-tile
+                        key={orderItem.Id}
+                        order-item={orderItem}
+                        class="slds-var-m-around_x-small"
+                        onorderitemchange={handleOrderItemChange}
+                        onorderitemdelete={handleOrderItemDelete}
+                    >
+                    </c-order-item-tile>
+                </template>
+                <template if:false={orderItems.length}>
+                    <c-placeholder
+                        message="Add products from left side to add in order"
+                    ></c-placeholder>
+                </template>
+            </div>
+        </template>
+        
+            <header class="slds-text-heading_small">
+              <div class ="right" if:true={orderItems}>
+                <lightning-button
+                    onclick={submitOrder}
+                    variant="Confirm Order"
+                    label="Confirm Order"
+                    class="slds-m-right_x-small slds-float_right"
+                    disabled={orderStatus}
+                ></lightning-button>
+            </div>
+            </header>
+    </div>
+</template>

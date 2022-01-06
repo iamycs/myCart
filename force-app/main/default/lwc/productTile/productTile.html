@@ -1,0 +1,28 @@
+<template>
+            <div class="content slds-grid">
+                <div class="col slds-large-size_8-of-12">
+                    <p class="title slds-align_absolute-center">{name}</p>
+                    <p class="slds-align_absolute-center">
+                        Price:&nbsp;
+                        <lightning-formatted-number
+                            format-style="currency"
+                            currency-code="USD"
+                            value={price}
+                            class="price"
+                            maximum-fraction-digits="0"
+                        ></lightning-formatted-number>
+                    </p>
+                </div>
+            <div class="col">
+            </div>
+            <div class="col slds-large-size_4-of-12">
+                <lightning-button
+                onclick={handleAddProd}
+                variant="Add"
+                label="Add"
+                class="slds-m-right_x-small"
+            ></lightning-button>
+            </div>
+        </div>
+           
+</template>
